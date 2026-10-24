@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Quest 🎯</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+
+    <div class="top-bar">
+      <div class="logo">🎯 Number Quest</div>
+      <div class="score">
+        🏆 Score: <span id="score">0</span>
+      </div>
+    </div>
+
+    <div class="game-card">
+
+      <div class="game-icon">🎲</div>
+
+      <h1>Guess the Number</h1>
+
+      <p class="description">
+        I'm thinking of a number between <strong>1 and 100</strong>.
+        Can you find it?
+      </p>
+
+      <div class="stats">
+        <div>
+          <span>❤️</span>
+          <small>Attempts</small>
+          <strong id="attempts">10</strong>
+        </div>
+
+        <div>
+          <span>🔥</span>
+          <small>Best Score</small>
+          <strong id="best-score">0</strong>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="number"
+          id="guess-input"
+          placeholder="Enter your guess"
+          min="1"
+          max="100"
+        >
+
+        <button id="guess-btn">Guess 🎯</button>
+      </div>
+
+      <div id="message" class="message">
+        Make your first guess!
+      </div>
+
+      <div class="hint">
+        💡 <span id="hint-text">Choose a number between 1 and 100</span>
+      </div>
+
+      <button id="new-game-btn" class="new-game">
+        🔄 New Game
+      </button>
+
+    </div>
+
+    <p class="footer">
+      Made By Bhagyesh ❤️
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
